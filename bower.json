@@ -1,0 +1,20 @@
+{
+  "name": "blog_smart",
+  "description": "blog_frond_end",
+  "main": "main.js",
+  "authors": [
+    "sistema"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/smartdesarrollador/temp_frn_nd",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "boostrap": "bootstrap4#^4.0.0"
+  }
+}
