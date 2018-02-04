@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/smartdesarrollador/temp_frn_nd/issues"
   },
-  "homepage": "https://github.com/smartdesarrollador/temp_frn_nd#readme"
+  "homepage": "https://github.com/smartdesarrollador/temp_frn_nd#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6"
+  }
 }
