@@ -2096,8 +2096,8 @@ tbody.collapse.show {
   list-style: none;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.25rem; }
+  border: 1px solid #4DD0E1;
+  border-radius: 0rem; }
 
 .dropup .dropdown-menu {
   margin-top: 0;
@@ -2183,15 +2183,15 @@ tbody.collapse.show {
   padding: 0.25rem 1.5rem;
   clear: both;
   font-weight: 400;
-  color: #212529;
+  color: #00BCD4;
   text-align: inherit;
   white-space: nowrap;
   background-color: transparent;
   border: 0; }
   .dropdown-item:hover, .dropdown-item:focus {
-    color: #16181b;
+    color: white;
     text-decoration: none;
-    background-color: red; }
+    background-color: #00BCD4; }
   .dropdown-item.active, .dropdown-item:active {
     color: #fff;
     text-decoration: none;
