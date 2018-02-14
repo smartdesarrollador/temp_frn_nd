@@ -1,0 +1,24 @@
+extends ./secciones/layout.jade
+include secciones/funcion.jade
+
+block title
+	title titulo de la pagina
+
+block content
+	.container
+		.row
+			.col-md-12.my-5.text-primary
+				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo id, perferendis reprehenderit nostrum ipsa eligendi provident nihil ea ratione dolorem ipsum ut. Praesentium, quas, nobis. Magni vel molestiae excepturi sunt?
+
+	//services
+	.container
+		.row
+			+service('titulo card','descripcion card')
+			+service('titulo card2','descripcion card2')
+			+service('titulo card3','descripcion card3')
+	//./services
+	
+	
+
+	
+

@@ -1,0 +1,20 @@
+include carousel.jade
+
+html(lan="en")
+	head
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+		link(rel="stylesheet", href="bower_components/boostrap/dist/css/bootstrap.min.css")
+
+		block title
+
+	body
+		h1 menu
+		
+		+carousel
+
+		block content
+
+		script(src="bower_components/jquery/dist/jquery.min.js")
+		script(src="bower_components/boostrap/assets/js/vendor/popper.min.js")
+		script(src="bower_components/boostrap/dist/js/bootstrap.min.js")

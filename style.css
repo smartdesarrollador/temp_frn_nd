@@ -323,6 +323,60 @@
 
 /** /Suscripcion */
 
+#imagen_business:hover{
+opacity: 0.5;
+-moz-transform: translateX(10px);
+-webkit-transform: translateX(10px);
+-o-transform: translateX(10px);
+-ms-transform: translateX(10px);
+transform: translateX(10px);
+}
+
+.parallax-window { min-height: 400px; background: transparent;
+background-position:-40px; }
+
+.parallax-mirror { z-index:1 } 
+
+
+.banner-2{
+    
+    background: url(recursos/img/banners_1300x500/flat_montañas.jpg);
+    float: left;
+    width: 100%;
+    height: 200px;
+    background-repeat:no-repeat; /* No se repetira */
+    background-size:cover; /* Imagen al 100% del ancho */
+    background-attachment: fixed; /* Posicion fija para la imagen */
+    text-align: center;
+    background-position: center center;
+
+}
+.banner-2 h4{
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    font-size: 32px;
+    height: 100%;
+    padding-top: 5%;
+    box-sizing: border-box;
+}
+.banner-2 a{
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.imagen_parallax{
+    background-image: url(recursos/img/banners_1300x500/decoracion_muebles.jpg);
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
 
 
 

@@ -1,0 +1,59 @@
+html(lan="en")
+	head
+		include secciones/funcion.jade
+		title titulo
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+		link(rel="stylesheet", href="bower_components/boostrap/dist/css/bootstrap.min.css")
+
+	
+
+	body
+
+		include secciones/carousel.jade
+
+
+		- var t_card = "Lorem ipsum dolor sit."
+		- var d_card = " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio mollitia doloremque beatae, commodi quibusdam saepe veritatis vero rerum aliquam aut!"
+
+		.container
+			.row
+				+service(t_card,d_card)
+				+service(t_card,d_card)
+				+service(t_card,d_card)
+				
+				
+
+		
+
+
+
+
+
+      	 
+			
+
+		
+
+
+
+
+		
+
+
+				
+
+		
+
+
+
+
+
+
+		script(src="bower_components/jquery/dist/jquery.min.js")
+		script(src="bower_components/boostrap/assets/js/vendor/popper.min.js")
+		script(src="bower_components/boostrap/dist/js/bootstrap.min.js")
+
+
+
+
