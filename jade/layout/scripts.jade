@@ -3,6 +3,7 @@ script(src='bower_components/jquery/dist/jquery.min.js')
 script(src='bower_components/boostrap/js/dist/popover.js')
 script(src='bower_components/boostrap/dist/js/bootstrap.min.js')
 script(src='bower_components/owl.carousel/dist/owl.carousel.min.js')
+script(src='bower_components/wow/dist/wow.min.js')
 script(type='text/javascript').
 	var owl = $('.owl-carousel');
 	owl.owlCarousel({
@@ -19,4 +20,20 @@ script(type='text/javascript').
 	$('.stop').on('click',function(){
 	owl.trigger('stop.owl.autoplay')
 	})
+script.
+	wow = new WOW(
+	{
+	animateClass: 'animated',
+	offset:       100,
+	callback:     function(box) {
+	console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+	}
+	}
+	);
+	wow.init();
+	document.getElementById('moar').onclick = function() {
+	var section = document.createElement('section');
+	section.className = 'section--purple wow fadeInDown';
+	this.parentNode.insertBefore(section, this);
+	};
 //./scripts
