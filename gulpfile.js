@@ -11,7 +11,7 @@ var gulp = require('gulp');
 gulp.task('sass', function () {
   return gulp.src('bower_components/boostrap/scss/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('recursos/css/sass_css'));
+    .pipe(gulp.dest('recursos/css'));
 });
  
 gulp.task('sass:watch', function () {

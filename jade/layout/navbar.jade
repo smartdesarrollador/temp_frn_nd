@@ -1,0 +1,27 @@
+//navbar
+nav.navbar.navbar-expand-lg.navbar-light.sticky-top(style='background-color:#00BCD4')
+  a#logo.navbar-brand.text-white(href='#') LogoEmpresa
+  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarSupportedContent.collapse.navbar-collapse
+    ul.navbar-nav.ml-auto.h5
+      li.nav-item.active
+        a.nav-link.text-white(href='http://localhost:3000/')
+          i.fa.fa-home
+          |  Inicio 
+          span.sr-only (current)
+      li.nav-item
+        a.nav-link.text-white(href='http://localhost:3000/nosotros.html') Nosotros
+      li.nav-item.dropdown
+        a#navbarDropdown.nav-link.dropdown-toggle.text-white(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+          | Servicios
+        .dropdown-menu(aria-labelledby='navbarDropdown')
+          a.dropdown-item(href='#') Servicio 1
+          a.dropdown-item(href='#') Servicio 2
+          .dropdown-divider
+          a.dropdown-item(href='#') Something else here
+      li.nav-item
+        a.nav-link.text-white(href='#') Galeria
+      li.nav-item
+        a.nav-link.text-white(href='#') Contacto
+//.navbar
