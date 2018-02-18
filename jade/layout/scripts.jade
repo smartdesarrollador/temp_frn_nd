@@ -4,6 +4,8 @@ script(src='bower_components/boostrap/js/dist/popover.js')
 script(src='bower_components/boostrap/dist/js/bootstrap.min.js')
 script(src='bower_components/owl.carousel/dist/owl.carousel.js')
 script(src='bower_components/wow/dist/wow.min.js')
+script(src='recursos/scrollup/jquery.scrollUp.js')
+script(src='recursos/social_media/jquery.floating-social-share.min.js')
 script(type='text/javascript').
 	
 	var owl = $('.owl-carousel');
@@ -38,4 +40,36 @@ script.
 	section.className = 'section--purple wow fadeInDown';
 	this.parentNode.insertBefore(section, this);
 	};
+script(type='text/javascript').
+	$(function () {
+	$.scrollUp({
+	scrollName: 'scrollUp',      // Element ID
+	scrollDistance: 300,         // Distance from top/bottom before showing element (px)
+	scrollFrom: 'top',           // 'top' or 'bottom'
+	scrollSpeed: 300,            // Speed back to top (ms)
+	easingType: 'linear',        // Scroll to top easing (see http://easings.net/)
+	animation: 'fade',           // Fade, slide, none
+	animationSpeed: 200,         // Animation speed (ms)
+	scrollTrigger: false,        // Set a custom triggering element. Can be an HTML string or jQuery object
+	scrollTarget: false,         // Set a custom target element for scrolling to. Can be element or number
+	scrollText: '', // Text for element, can contain HTML
+	scrollTitle: false,          // Set a custom <a> title if required.
+	scrollImg: false,            // Set true to use image
+	activeOverlay: false,        // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+	zIndex: 2147483647           // Z-Index for the overlay
+	});
+	});
+script.
+	$("body").floatingSocialShare({
+	buttons: [
+	"facebook", "google-plus", "linkedin", "pinterest", 
+	  "twitter",  "whatsapp"
+	],
+	twitter_counter: true,
+	text: "share with: ",
+	url: "http://google.com"
+	});
+script(type='text/javascript').
+	$(window).on('load',function(){ $('#myModal').modal('show'); });
+
 //./scripts

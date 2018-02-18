@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--./metas-->
     <!--styles-->
+    <link rel="stylesheet" href="recursos/scrollup/image.css">
+    <link rel="stylesheet" href="recursos/scrollup/labs.css">
     <link rel="stylesheet" href="recursos/css/bootstrap.css">
     <link rel="stylesheet" href="bower_components/hover/css/hover-min.css">
     <link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
     <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="recursos/css/simple_hover_image.css">
+    <link rel="stylesheet" href="recursos/social_media/jquery.floating-social-share.min.css">
     <link rel="stylesheet" href="recursos/css/style.css">
     <!--./styles-->
     <!--fonts-->
@@ -22,6 +25,9 @@
     <title>servicios</title>
   </head>
   <body>
+    <ul class="themes">
+      <li><a class="image-switch active" href="#" style="display:none;">Image</a></li>
+    </ul>
     <!--navbar-->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color:#00BCD4;"><a class="navbar-brand text-white" id="logo" href="#">LogoEmpresa</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -133,6 +139,8 @@
     <script src="bower_components/boostrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/owl.carousel/dist/owl.carousel.js"></script>
     <script src="bower_components/wow/dist/wow.min.js"></script>
+    <script src="recursos/scrollup/jquery.scrollUp.js"></script>
+    <script src="recursos/social_media/jquery.floating-social-share.min.js"></script>
     <script type="text/javascript">
       var owl = $('.owl-carousel');
       owl.owlCarousel({
@@ -167,6 +175,41 @@
       section.className = 'section--purple wow fadeInDown';
       this.parentNode.insertBefore(section, this);
       };
+    </script>
+    <script type="text/javascript">
+      $(function () {
+      $.scrollUp({
+      scrollName: 'scrollUp',      // Element ID
+      scrollDistance: 300,         // Distance from top/bottom before showing element (px)
+      scrollFrom: 'top',           // 'top' or 'bottom'
+      scrollSpeed: 300,            // Speed back to top (ms)
+      easingType: 'linear',        // Scroll to top easing (see http://easings.net/)
+      animation: 'fade',           // Fade, slide, none
+      animationSpeed: 200,         // Animation speed (ms)
+      scrollTrigger: false,        // Set a custom triggering element. Can be an HTML string or jQuery object
+      scrollTarget: false,         // Set a custom target element for scrolling to. Can be element or number
+      scrollText: '', // Text for element, can contain HTML
+      scrollTitle: false,          // Set a custom <a> title if required.
+      scrollImg: false,            // Set true to use image
+      activeOverlay: false,        // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+      zIndex: 2147483647           // Z-Index for the overlay
+      });
+      });
+    </script>
+    <script>
+      $("body").floatingSocialShare({
+      buttons: [
+      "facebook", "google-plus", "linkedin", "pinterest", 
+        "twitter",  "whatsapp"
+      ],
+      twitter_counter: true,
+      text: "share with: ",
+      url: "http://google.com"
+      });
+    </script>
+    <script type="text/javascript">
+      $(window).on('load',function(){ $('#myModal').modal('show'); });
+      
     </script>
     <!--./scripts-->
   </body>

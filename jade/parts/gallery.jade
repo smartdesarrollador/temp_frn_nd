@@ -1,0 +1,13 @@
+//Gallery
+h2.text-center.my-5 Gallery
+.container
+	.row.my-5
+		- for (var x = 1; x <= 8; x++)
+			.col-md-3.my-2
+				a#imagen_galeria.hover01(href="#")
+					figure
+						- var src_img = 'recursos/img/image_300x300/' + x + '.jpg'
+						img.img-fluid(src= src_img)
+				
+		
+			
