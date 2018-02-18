@@ -1,0 +1,19 @@
+mixin posts_portafolio(titulo='lorem',descripcion=' Lorem ipsum dolor sit.',image='recursos/img/banners_750x500/business.jpg')
+	//post_portafolio
+	.row
+		.col-md-12
+			.card.border-0.hover01(style="width:38rem")
+				figure
+					img.card-img-top(src=image)
+				.card-body
+					h5.card-title= titulo
+					hr
+					p.text-muted November 4, 2018, at 3:40pm
+					p.card-text.text-justify= descripcion
+					p.text-muted.d-inline.border-right.pr-2 2 comments 
+					p.text-muted.d-inline.border-right.px-2 shards
+					a.hvr-forward.d-inline.pl-2(href="http://localhost:3000/post.html")
+						i.fa.fa-angle-right  read more
+
+
+		

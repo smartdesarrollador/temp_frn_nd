@@ -1,0 +1,19 @@
+include mixin_posts_portafolio.jade
+- var titulo =  'Lorem ipsum dolor.'
+- var descripcion =  ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta in earum, nihil aut pariatur laboriosam id aperiam officiis minus hic ullam repellendus, natus minima. Quas.'
+//Posts portafolio
+section#posts_portafolio.my-5
+	.container
+		.row
+			.col-md-8
+				+posts_portafolio(titulo,descripcion)
+				+posts_portafolio(titulo,descripcion)
+				+posts_portafolio(titulo,descripcion)
+				+posts_portafolio(titulo,descripcion)
+				+posts_portafolio(titulo,descripcion)
+				
+			.col-md-4
+				include ../sidebar/sidebar.jade
+		
+			
+			

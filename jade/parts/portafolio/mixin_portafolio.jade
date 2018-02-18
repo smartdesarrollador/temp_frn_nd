@@ -1,10 +1,17 @@
-mixin card_portafolio(titulo='lorem',descripcion=' Lorem ipsum dolor sit.',image='http://via.placeholder.com/200x130')
+mixin card_portafolio(titulo='lorem',descripcion=' Lorem ipsum dolor sit.',image='recursos/img/banners_750x500/business.jpg')
 	//card_portafolio
 	.col-md-3
-		.card(style="width:14rem")
+		.card.border-0(style="width:14rem")
 			img.card-img-top(src=image)
 			.card-body
-				.card-title= titulo
-				.card-text= descripcion
+				h5.card-title= titulo
+				hr
+				p.text-muted November 4, 2018, at 3:40pm
+				p.card-text.text-justify= descripcion
+				p.text-muted.d-inline.border-right.pr-2 2 comments 
+				p.text-muted.d-inline.pl-2 2 shards
+				a.hvr-forward(href="#")
+					i.fa.fa-angle-right  read more
+
 
 		

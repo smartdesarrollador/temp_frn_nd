@@ -1,0 +1,15 @@
+extends ./layout/layout.jade
+
+block title
+	title index
+
+block content
+	.container
+		.row.my-5
+			.col-md-7
+				include parts/article.jade
+				include parts/comments/comments.jade
+				include parts/comments/form_comments.jade
+			.col-md-5
+				include parts/sidebar/sidebar.jade
+	
