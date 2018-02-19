@@ -7,7 +7,11 @@ h2.text-center.my-5 Gallery
 				a#imagen_galeria.hover01(href="#")
 					figure
 						- var src_img = 'recursos/img/image_300x300/' + x + '.jpg'
-						img.img-fluid(src= src_img)
+						img.img-fluid.thumb_gallery(src= src_img)
+.container
+	.row
+		.col-md-12
+			#background_overlay
 				
 		
 			

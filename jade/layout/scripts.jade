@@ -2,10 +2,11 @@
 script(src='bower_components/jquery/dist/jquery.min.js')
 script(src='bower_components/boostrap/js/dist/popover.js')
 script(src='bower_components/boostrap/dist/js/bootstrap.min.js')
+script(src='recursos/social_media/jquery.floating-social-share.min.js')
 script(src='bower_components/owl.carousel/dist/owl.carousel.js')
 script(src='bower_components/wow/dist/wow.min.js')
 script(src='recursos/scrollup/jquery.scrollUp.js')
-script(src='recursos/social_media/jquery.floating-social-share.min.js')
+script(src='recursos/gallery_jquery/gallery.js')
 script(type='text/javascript').
 	
 	var owl = $('.owl-carousel');
@@ -71,5 +72,15 @@ script.
 	});
 script(type='text/javascript').
 	$(window).on('load',function(){ $('#myModal').modal('show'); });
+script(type='text/javascript').
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-36251023-1']);
+	_gaq.push(['_setDomainName', 'jqueryscript.net']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
 
 //./scripts

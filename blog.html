@@ -12,9 +12,10 @@
     <link rel="stylesheet" href="bower_components/hover/css/hover-min.css">
     <link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
     <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="recursos/social_media/jquery.floating-social-share.min.css">
     <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="recursos/css/simple_hover_image.css">
-    <link rel="stylesheet" href="recursos/social_media/jquery.floating-social-share.min.css">
+    <link rel="stylesheet" href="recursos/gallery_jquery/style-gallery.css">
     <link rel="stylesheet" href="recursos/css/style.css">
     <!--./styles-->
     <!--fonts-->
@@ -264,10 +265,11 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/boostrap/js/dist/popover.js"></script>
     <script src="bower_components/boostrap/dist/js/bootstrap.min.js"></script>
+    <script src="recursos/social_media/jquery.floating-social-share.min.js"></script>
     <script src="bower_components/owl.carousel/dist/owl.carousel.js"></script>
     <script src="bower_components/wow/dist/wow.min.js"></script>
     <script src="recursos/scrollup/jquery.scrollUp.js"></script>
-    <script src="recursos/social_media/jquery.floating-social-share.min.js"></script>
+    <script src="recursos/gallery_jquery/gallery.js"></script>
     <script type="text/javascript">
       var owl = $('.owl-carousel');
       owl.owlCarousel({
@@ -334,8 +336,17 @@
       url: "http://google.com"
       });
     </script>
+    <script type="text/javascript">$(window).on('load',function(){ $('#myModal').modal('show'); });</script>
     <script type="text/javascript">
-      $(window).on('load',function(){ $('#myModal').modal('show'); });
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-36251023-1']);
+      _gaq.push(['_setDomainName', 'jqueryscript.net']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
       
     </script>
     <!--./scripts-->
